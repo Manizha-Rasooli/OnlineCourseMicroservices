@@ -15,6 +15,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -33,16 +34,12 @@ namespace FreeCourse.Services.Basket
         public void ConfigureServices(IServiceCollection services)
         {
             var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");//it provides mapping sub to nameidentifier
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.Authority = Configuration["IdentityServerURL"];
-                options.Audience = "photo_stock_catalog";
+                options.Audience = "resource_basket";
                 options.RequireHttpsMetadata = false;
-            });
-
-            services.AddControllers(opt =>
-            {
-                opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy));
             });
 
             services.AddHttpContextAccessor();
@@ -53,16 +50,23 @@ namespace FreeCourse.Services.Basket
             services.AddSingleton<RedisService>(sp =>
             {
                 var redisSettings = sp.GetRequiredService<IOptions<RedisSettings>>().Value;
+
                 var redis = new RedisService(redisSettings.Host, redisSettings.Port);
+
                 redis.Connect();
+
                 return redis;
             });
 
-            services.AddControllers();
+            services.AddControllers(opt =>
+            {
+                opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy));
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FreeCourse.Services.Basket", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
