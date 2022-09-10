@@ -18,7 +18,7 @@ namespace FreeCourse.Services.Discount.Services
         public DiscountService(IConfiguration configuration)
         {
             _configuration = configuration;
-            _dbConnection = new NpgsqlConnection(_configuration.GetConnectionString("DiscountService"));
+            _dbConnection = new NpgsqlConnection(_configuration.GetConnectionString("PostgreSql"));
         }
 
         public async Task<Response<NoContent>> Delete(int id)

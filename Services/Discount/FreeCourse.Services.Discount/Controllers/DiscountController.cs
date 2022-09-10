@@ -30,6 +30,8 @@ namespace FreeCourse.Services.Discount.Controllers
         }
 
 
+
+        //api/discounts/4
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -37,6 +39,8 @@ namespace FreeCourse.Services.Discount.Controllers
             return CreateActionResultInstance(discount);
         }
 
+
+        [HttpGet]
         [Route("/api/[controller]/[action]/{code}")]
         public async Task<IActionResult> GetByCode(string code)
         {
