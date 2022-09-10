@@ -21,6 +21,10 @@ namespace FreeCourse.Services.Order.Domain.OrderAggregate
 
         #region Constructor Method
 
+        public OrderItem()
+        {
+
+        }
         public OrderItem(string productId, string productName, string pictureUrl, decimal price)
         {
             ProductId = productId;
