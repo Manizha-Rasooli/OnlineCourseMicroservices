@@ -10,9 +10,9 @@ namespace FreeCourse.Services.Order.Domain.OrderAggregate
     public class Order:Entity, IAggregateRoot
     {
         #region Properties
-        public DateTime CreateDateTime { get; set; }
-        public Address Address { get; set; }
-        public string BuyerId  { get; set; }
+        public DateTime CreateDateTime { get;private set; }
+        public Address Address { get; private set; }
+        public string BuyerId  { get; private set; }
         #endregion
 
         private readonly List<OrderItem> _orderItems; // We can only set Or Fill orderItems from this field

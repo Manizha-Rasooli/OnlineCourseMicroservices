@@ -17,3 +17,5 @@ C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservic
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Services\Order\FreeCourse.Services.Order.Application\obj\Debug\net5.0\FreeCourse.Services.Order.Application.dll
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Services\Order\FreeCourse.Services.Order.Application\obj\Debug\net5.0\ref\FreeCourse.Services.Order.Application.dll
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Services\Order\FreeCourse.Services.Order.Application\obj\Debug\net5.0\FreeCourse.Services.Order.Application.pdb
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net5.0\FreeCourse.Shared.dll
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net5.0\FreeCourse.Shared.pdb
