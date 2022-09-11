@@ -11,7 +11,7 @@ namespace FreeCourse.Web.Services.Interfaces
     /// <summary>
     /// This interface contains all the request to IdentityServer
     /// </summary>
-    interface IIdentityService
+    public interface IIdentityService
     {
         Task<Response<bool>> SignIn(SignInInput signInInput);
         Task<TokenResponse> GetAccessTokenByRefreshToken();

@@ -48,6 +48,11 @@ namespace FreeCourse.Web.Services.Implementation
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Cookie Based Authentication(This Method create AccessToken and RefreshToken. And keep it in the cookie)
+        /// </summary>
+        /// <param name="signInInput"></param>
+        /// <returns></returns>
         public async Task<Response<bool>> SignIn(SignInInput signInInput)
         {
             var disco = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
