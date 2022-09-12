@@ -17,13 +17,11 @@ namespace FreeCourse.Web.Handler
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IIdentityService  _identityService;
-        private readonly ILogger _logger;
 
-        public ResourceOwnerPasswordTokenHandler(IHttpContextAccessor httpContextAccessor, IIdentityService identityService, ILogger logger)
+        public ResourceOwnerPasswordTokenHandler(IHttpContextAccessor httpContextAccessor, IIdentityService identityService)
         {
             _httpContextAccessor = httpContextAccessor;
             _identityService = identityService;
-            _logger = logger;
         }
 
         protected async override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
