@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JfdSFAR6vVgL6MPFIIJyem+JhJJwfOmu2BAJHPsKH4LypD0C8cb0W913VPkDkrAoYq4cox5AoEBeZB7h3Vsiww==",
+  "dgSpecHash": "N3oP3SdsP7T4oEkXOEK/8vY8riKwie6Xyjlrzj/8tF/XGpCcR3J0ONwwKKyicFDjInBcBo2Ti85Z8zhTZDbbIQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\maniz\\OneDrive\\Desktop\\Udemy\\UdemyMicroserviceTraining\\UdemyMicroservice\\Frontends\\FreeCourse.Web\\FreeCourse.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maniz\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\maniz\\.nuget\\packages\\identitymodel.aspnetcore\\4.3.0\\identitymodel.aspnetcore.4.3.0.nupkg.sha512",
+    "C:\\Users\\maniz\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.23.1\\microsoft.identitymodel.abstractions.6.23.1.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.23.1\\microsoft.identitymodel.jsonwebtokens.6.23.1.nupkg.sha512",
