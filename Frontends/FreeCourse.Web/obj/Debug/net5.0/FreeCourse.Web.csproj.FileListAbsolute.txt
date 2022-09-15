@@ -51,3 +51,8 @@ C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservic
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Auth\SignIn.cshtml.g.cs
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\bin\Debug\net5.0\IdentityModel.AspNetCore.dll
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Courses\Index.cshtml.g.cs
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Courses\Create.cshtml.g.cs
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Courses\Update.cshtml.g.cs

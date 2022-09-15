@@ -7,13 +7,13 @@ namespace FreeCourse.Shared.Dtos
 {
    public class Response<T>
     {
-        public T Data { get;private set; }
+        public T Data { get; set; }
 
         [JsonIgnore] 
-        public int StatusCode { get; private set; } // dont need to serialize
+        public int StatusCode { get;  set; } // dont need to serialize
         
         [JsonIgnore]
-        public bool IsSuccessful { get; private set; } // dont need to serialize
+        public bool IsSuccessful { get;  set; } // dont need to serialize
 
         public List<string> Errors { get; set; }
 
