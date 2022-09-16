@@ -51,7 +51,7 @@ namespace FreeCourse.IdentityServer
 
                     var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-                    if(!userManager.Users.Any())
+                    if (!userManager.Users.Any())
                     {
                         userManager.CreateAsync(new ApplicationUser
                         {
