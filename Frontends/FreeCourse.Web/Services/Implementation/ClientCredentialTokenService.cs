@@ -19,18 +19,16 @@ namespace FreeCourse.Web.Services.Implementation
         private readonly ClientSettings _clientSettings;
         private readonly IClientAccessTokenCache _clientAccessTokenCache;
         private readonly HttpClient _httpClient;
-        private readonly ClientAccessTokenParameters clientAccessTokenParameters;
-        private readonly CancellationToken cancellationToken;
+   
 
         public ClientCredentialTokenService(IOptions<ServiceApiSettings> serviceApiSettings, IOptions<ClientSettings> clientSettings,
-            IClientAccessTokenCache clientAccessTokenCache, HttpClient httpClient, ClientAccessTokenParameters clientAccessTokenParameters = null, CancellationToken cancellationToken = default)
+            IClientAccessTokenCache clientAccessTokenCache, HttpClient httpClient)
         {
             _serviceApiSettings = serviceApiSettings.Value;
             _clientSettings = clientSettings.Value;
             _clientAccessTokenCache = clientAccessTokenCache;
             _httpClient = httpClient;
-            this.clientAccessTokenParameters = clientAccessTokenParameters;
-            this.cancellationToken = cancellationToken;
+
         }
 
         #endregion
@@ -38,7 +36,7 @@ namespace FreeCourse.Web.Services.Implementation
 
         public async Task<string> GetToken()
         {
-            var currentToken = await _clientAccessTokenCache.GetAsync("WebClientToken", clientAccessTokenParameters, cancellationToken);
+            var currentToken = await _clientAccessTokenCache.GetAsync("WebClientToken");
 
             if (currentToken != null)
             {
@@ -70,7 +68,7 @@ namespace FreeCourse.Web.Services.Implementation
                 throw newToken.Exception;
             }
 
-            await _clientAccessTokenCache.SetAsync("WebClientToken", newToken.AccessToken, newToken.ExpiresIn, clientAccessTokenParameters, cancellationToken);
+            await _clientAccessTokenCache.SetAsync("WebClientToken", newToken.AccessToken, newToken.ExpiresIn);
 
             return newToken.AccessToken;
         }

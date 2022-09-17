@@ -11,10 +11,10 @@
           "lib/net5.0/IdentityModel.dll": {}
         }
       },
-      "IdentityModel.AspNetCore/4.3.0": {
+      "IdentityModel.AspNetCore/3.0.0": {
         "type": "package",
         "dependencies": {
-          "IdentityModel": "6.0.0",
+          "IdentityModel": "4.5.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.0"
         },
         "compile": {
@@ -249,21 +249,21 @@
         "lib/netstandard2.0/IdentityModel.xml"
       ]
     },
-    "IdentityModel.AspNetCore/4.3.0": {
-      "sha512": "WWb9QJXoDM9Z3ThDYtyyNfhUFvBj+YMcF9rl5CA23aDwN/VqNCUo1eHirjh/YYEhBoMiB5USmeWbimfbxrBKUQ==",
+    "IdentityModel.AspNetCore/3.0.0": {
+      "sha512": "6ttoSmcuuGir4uP7BNGkd24D6kfrYw8Rbb2VJ/LnB6hbcWki2W+QN1fDtKR3GyhALKoKhDemQvgkKmCPoilNoQ==",
       "type": "package",
-      "path": "identitymodel.aspnetcore/4.3.0",
+      "path": "identitymodel.aspnetcore/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identitymodel.aspnetcore.4.3.0.nupkg.sha512",
+        "identitymodel.aspnetcore.3.0.0.nupkg.sha512",
         "identitymodel.aspnetcore.nuspec",
         "lib/net5.0/IdentityModel.AspNetCore.dll",
+        "lib/net5.0/IdentityModel.AspNetCore.pdb",
         "lib/net5.0/IdentityModel.AspNetCore.xml",
-        "lib/net6.0/IdentityModel.AspNetCore.dll",
-        "lib/net6.0/IdentityModel.AspNetCore.xml",
         "lib/netcoreapp3.1/IdentityModel.AspNetCore.dll",
+        "lib/netcoreapp3.1/IdentityModel.AspNetCore.pdb",
         "lib/netcoreapp3.1/IdentityModel.AspNetCore.xml"
       ]
     },
@@ -779,7 +779,7 @@
     "net5.0": [
       "FreeCourse.Shared >= 1.0.0",
       "IdentityModel >= 6.0.0",
-      "IdentityModel.AspNetCore >= 4.3.0",
+      "IdentityModel.AspNetCore >= 3.0.0",
       "Microsoft.IdentityModel.Protocols.OpenIdConnect >= 6.23.1"
     ]
   },
@@ -836,7 +836,7 @@
           },
           "IdentityModel.AspNetCore": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[3.0.0, )"
           },
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": {
             "target": "Package",

@@ -1,5 +1,6 @@
 using FreeCourse.Shared.Services;
 using FreeCourse.Web.Handler;
+using FreeCourse.Web.Helpers;
 using FreeCourse.Web.Models;
 using FreeCourse.Web.Services.Implementation;
 using FreeCourse.Web.Services.Interfaces;
@@ -32,11 +33,14 @@ namespace FreeCourse.Web
             services.Configure<ServiceApiSettings>(Configuration.GetSection("ServiceApiSettings"));
             services.AddHttpContextAccessor();
             services.AddAccessTokenManagement();
+            services.AddSingleton<PhotoHelper>();
+
             services.AddScoped<ISharedIdentityService, SharedIdentityService>();
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
             services.AddScoped<ClientCredentialTokenHandler>();
-            services.AddHttpClient<IIdentityService, IdentityService>();
             services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();
+
+            services.AddHttpClient<IIdentityService, IdentityService>();
 
             var serviceApiSettings = Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
@@ -60,7 +64,7 @@ namespace FreeCourse.Web
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
                 {
                     opts.LoginPath = "/Auth/SignIn";
-                    opts.ExpireTimeSpan = TimeSpan.FromDays(60);
+                    opts.ExpireTimeSpan = TimeSpan.FromDays(14);
                     opts.SlidingExpiration = true;
                     opts.Cookie.Name = "microservicewebcookie";
                 });

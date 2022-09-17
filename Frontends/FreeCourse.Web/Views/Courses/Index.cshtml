@@ -16,6 +16,7 @@
                                 <th>Fiyat</th>
                                 <th>Süre</th>
                                 <th>Kategori</th>
+                                <th>Resim</th>
                                 <th>İşlemler</th>
                               
                             </tr>
@@ -28,6 +29,7 @@
                                     <td>@item.Price</td>
                                     <td>@item.Feature.Duration</td>
                                     <td>@item.Category.Name</td>
+                                    <td><img src="@item.Picture" class="img-thumbnail"/></td>
                                     <td>
                                         <a asp-controller="Courses" asp-action="Update" asp-route-id="@item.Id" class=" btn btn-success btn-sm">
                                             Güncelle<i class="fa fa-check-square"></i>
