@@ -92,6 +92,7 @@ namespace FreeCourse.Web.Services.Implementation
             return token;
         }
 
+
         /// <summary>
         /// This Method clear Refresh Token of Identity server from memory When the User is logout
         /// </summary>
@@ -103,12 +104,13 @@ namespace FreeCourse.Web.Services.Implementation
                 Address = _serviceApiSettings.IdentityBaseUri,
                 Policy = new DiscoveryPolicy { RequireHttps = false }
             });
+
             if (disco.IsError)
             {
                 throw disco.Exception;
             }
-
             var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.RefreshToken);
+
             TokenRevocationRequest tokenRevocationRequest = new()
             {
                 ClientId = _clientSettings.WebClientForUser.ClientId,
@@ -119,7 +121,6 @@ namespace FreeCourse.Web.Services.Implementation
             };
 
             await _httpClient.RevokeTokenAsync(tokenRevocationRequest);
-
         }
 
         /// <summary>
@@ -127,7 +128,7 @@ namespace FreeCourse.Web.Services.Implementation
         /// </summary>
         /// <param name="signInInput"></param>
         /// <returns></returns>
-          public async Task<Response<bool>> SignIn(SignInInput signinInput)
+        public async Task<Response<bool>> SignIn(SignInInput signinInput)
         {
             var disco = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
             {

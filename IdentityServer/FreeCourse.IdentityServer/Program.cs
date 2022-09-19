@@ -46,10 +46,13 @@ namespace FreeCourse.IdentityServer
                 using (var scope = host.Services.CreateScope())
                 {
                     var serviceProvider = scope.ServiceProvider;
+
                     var applicationDbContext = serviceProvider.GetRequiredService<ApplicationDbContext>();
+
                     applicationDbContext.Database.Migrate();
 
                     var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
 
                     if (!userManager.Users.Any())
                     {

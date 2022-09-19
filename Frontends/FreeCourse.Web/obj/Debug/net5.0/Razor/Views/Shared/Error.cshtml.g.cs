@@ -33,8 +33,15 @@ using FreeCourse.Web.Models.Catalog;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\Views\_ViewImports.cshtml"
+using FreeCourse.Web.Models.Basket;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"350d8d2272bd864d4bb0d64f5dc3eb5bd0a632e9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e19157f8db9784a7a97958aee103c4d300f12e7f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

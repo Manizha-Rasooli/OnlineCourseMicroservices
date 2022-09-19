@@ -28,9 +28,10 @@ namespace FreeCourse.Web.Services.Implementation
         public async Task AddBasketItem(BasketItemViewModel basketItemViewModel)
         {
             var basket = await Get();
-            if(basket != null)
+
+            if (basket != null)
             {
-                if(!basket.BasketItems.Any(x=>x.CourseId == basketItemViewModel.CourseId))
+                if (!basket.BasketItems.Any(x => x.CourseId == basketItemViewModel.CourseId))
                 {
                     basket.BasketItems.Add(basketItemViewModel);
                 }
@@ -38,8 +39,10 @@ namespace FreeCourse.Web.Services.Implementation
             else
             {
                 basket = new BasketViewModel();
+
                 basket.BasketItems.Add(basketItemViewModel);
             }
+
             await SaveOrUpdate(basket);
         }
 

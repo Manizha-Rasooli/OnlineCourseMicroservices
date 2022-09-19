@@ -33,8 +33,15 @@ using FreeCourse.Web.Models.Catalog;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\Views\_ViewImports.cshtml"
+using FreeCourse.Web.Models.Basket;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d25c5f416a3d7296499343b180e5f4c476c35f3a", @"/Views/User/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"350d8d2272bd864d4bb0d64f5dc3eb5bd0a632e9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e19157f8db9784a7a97958aee103c4d300f12e7f", @"/Views/_ViewImports.cshtml")]
     public class Views_User_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<UserViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Courses", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -104,7 +111,7 @@ using FreeCourse.Web.Models.Catalog;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-3\">\r\n        <ul class=\"list-group\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d25c5f416a3d7296499343b180e5f4c476c35f3a6549", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d25c5f416a3d7296499343b180e5f4c476c35f3a6799", async() => {
                 WriteLiteral("Kurslarım");
             }
             );

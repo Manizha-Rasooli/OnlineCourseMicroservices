@@ -44,12 +44,12 @@ namespace FreeCourse.Web
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
-                {
-                    opts.LoginPath = "/Auth/SignIn";
-                    opts.ExpireTimeSpan = TimeSpan.FromDays(14);
-                    opts.SlidingExpiration = true;
-                    opts.Cookie.Name = "microservicewebcookie";
-                });
+            {
+                opts.LoginPath = "/Auth/SignIn";
+                opts.ExpireTimeSpan = TimeSpan.FromDays(60);
+                opts.SlidingExpiration = true;
+                opts.Cookie.Name = "microservicewebcookie";
+            });
 
             services.AddControllersWithViews();
         }

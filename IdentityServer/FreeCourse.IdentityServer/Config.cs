@@ -65,13 +65,12 @@ namespace FreeCourse.IdentityServer
                     ClientSecrets = {new Secret("secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword, // has refresh token 
                     AllowedScopes = {"basket_fullpermission","discount_fullpermission","order_fullpermission","payment_fullpermission","gateway_fullpermission",
-                        IdentityServerConstants.StandardScopes.Email,
-                    IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile,
-                    IdentityServerConstants.StandardScopes.OfflineAccess,IdentityServerConstants.LocalApi.ScopeName,"roles"},  // OfflineAccess : even user is not online or is not login you can sen a refresh token and get token
-                    AccessTokenLifetime = 1*60*60,
-                    RefreshTokenExpiration = TokenExpiration.Absolute, // we can keep refreshtoken in cookie
-                    AbsoluteRefreshTokenLifetime = (int) (DateTime.Now.AddDays(60) - DateTime.Now).TotalSeconds,
-                    RefreshTokenUsage = TokenUsage.ReUse
+                    IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile, 
+                    IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName,"roles"},  // OfflineAccess : even user is not online or is not login you can sen a refresh token and get token
+                    AccessTokenLifetime=1*60*60,
+                    RefreshTokenExpiration=TokenExpiration.Absolute, // we can keep refreshtoken in cookie
+                    AbsoluteRefreshTokenLifetime= (int) (DateTime.Now.AddDays(60)- DateTime.Now).TotalSeconds,
+                    RefreshTokenUsage= TokenUsage.ReUse
 
                 }
             };
