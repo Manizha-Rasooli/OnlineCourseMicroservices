@@ -58,3 +58,6 @@ C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservic
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\ref\FreeCourse.Web.dll
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\FreeCourse.Web.pdb
 C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\obj\Debug\net5.0\FreeCourse.Web.genruntimeconfig.cache
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\maniz\OneDrive\Desktop\Udemy\UdemyMicroserviceTraining\UdemyMicroservice\Frontends\FreeCourse.Web\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

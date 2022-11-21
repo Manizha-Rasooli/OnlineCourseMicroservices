@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "FreeCourse.Web/1.0.0": {
         "dependencies": {
+          "FluentValidation.AspNetCore": "11.2.2",
           "FreeCourse.Shared": "1.0.0",
           "IdentityModel": "6.0.0",
           "IdentityModel.AspNetCore": "3.0.0",
@@ -128,7 +129,7 @@
           "Microsoft.Extensions.Configuration.KeyPerFile": "5.0.0.0",
           "Microsoft.Extensions.Configuration.UserSecrets": "5.0.0.0",
           "Microsoft.Extensions.Configuration.Xml": "5.0.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions.Reference": "5.0.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "5.0.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "5.0.0.0",
@@ -328,6 +329,47 @@
           "FreeCourse.Web.dll": {}
         }
       },
+      "FluentValidation/11.2.1": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/11.2.2": {
+        "dependencies": {
+          "FluentValidation": "11.2.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.2.1"
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.2.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.2.1": {
+        "dependencies": {
+          "FluentValidation": "11.2.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "IdentityModel/6.0.0": {
         "runtime": {
           "lib/net5.0/IdentityModel.dll": {
@@ -369,6 +411,7 @@
         }
       },
       "Microsoft.CSharp/4.5.0": {},
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {},
       "Microsoft.IdentityModel.Abstractions/6.23.1": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll": {
@@ -1046,7 +1089,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions.Reference/5.0.0.0": {
         "compile": {
           "Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
@@ -2206,6 +2249,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "FluentValidation/11.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZrQD0TGd0mHqf/zErZOEaba8cBeInaJj02nqinO+0La3uE08sJ5ScTYqsCbdx9fLHsX8rh+5KH5RtL2eOUS+OA==",
+      "path": "fluentvalidation/11.2.1",
+      "hashPath": "fluentvalidation.11.2.1.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jU/MHXqg9cnOU18dY75vorP2c2WDKMan4zegOPsoc34xZVjzTEtXP0fKvkDEdeaChUVooNWuRr27u9w3sYbEFA==",
+      "path": "fluentvalidation.aspnetcore/11.2.2",
+      "hashPath": "fluentvalidation.aspnetcore.11.2.2.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WqR2kt0OidUCg9xS+YOoiDmdCu7EnYLLgQb/bX+5fTTVor+90dWmr1OdJaWlLZvg2nbwV9EfxA9FZp91+JmQtg==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.2.1",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512"
+    },
     "IdentityModel/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2233,6 +2297,13 @@
       "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Abstractions/6.23.1": {
       "type": "package",
@@ -2785,7 +2856,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0.0": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
