@@ -53,6 +53,14 @@ namespace FreeCourse.Web.Extensions
             }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
 
             #endregion
+
+            #region Payment Service
+            services.AddHttpClient<IPaymentService, PaymentService>(opt =>
+            {
+                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Payment.Path}");
+            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+            #endregion
         }
     }
 }
