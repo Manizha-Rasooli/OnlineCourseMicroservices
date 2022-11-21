@@ -25,7 +25,7 @@
                             <tr>
                                 <td>@item.CourseName</td>
                                 <td>
-                                    @item.GetCurrentPrice TL 
+                                    @item.GetCurrentPrice TL
                                 </td>
                                 <td>
                                     <a class="btn btn-danger" asp-controller="Basket" asp-action="RemoveBasketItem" asp-route-courseId="@item.CourseId">sil</a>
@@ -48,6 +48,27 @@
                             <th colspan="2">@Model.TotalPrice TL</th>
                         </tr>
                     </table>
+
+                    <form asp-controller="Basket" asp-action="ApplyDiscount">
+                        @if (Model.HasDiscount)
+                        {
+                            <div class="alert alert-info">
+                                "@Model.DiscountCode"indirim uygulandı
+                            </div>
+                        }
+                        @if (TempData["discountStatus"] != null && (bool)TempData["discountStatus"] == false)
+                        {
+                            <div class="text-danger">
+                                İndirim kodu geçersiz
+                            </div>
+                        }
+                        <div class="input-group mb-3">
+                            <input type="text" name="DiscountApplyInput.Code" class="form-control" />
+                            <div asp-validation-summary="All"></div>
+                            <button type="submit" class="btn btn-outline-secondary">Uygula</button>
+                        </div>
+                    </form>
+
 
                 }
                 else
