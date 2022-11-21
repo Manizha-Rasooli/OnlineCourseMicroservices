@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "h7Bq07nOC+5sf3NkXC7qhFfYO+PFv7eFMzc0wLXdKeJz3rlvzmRZehD9IG4BBs8Q8t8RFAl9y4lZD/jaR1tFUg==",
+  "dgSpecHash": "NrbzAjkiit0qWKqrAcwKqSADURcPA+ufI/uoy5wSqHvs4ddJGUQvGxMUZ1ZynVu9n/vXsLQb+EUjU0kzlPP+6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\maniz\\OneDrive\\Desktop\\Udemy\\UdemyMicroserviceTraining\\UdemyMicroservice\\Frontends\\FreeCourse.Web\\FreeCourse.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\maniz\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\maniz\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\maniz\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\identitymodel.aspnetcore\\3.0.0\\identitymodel.aspnetcore.3.0.0.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\maniz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.23.1\\microsoft.identitymodel.abstractions.6.23.1.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.23.1\\microsoft.identitymodel.jsonwebtokens.6.23.1.nupkg.sha512",
     "C:\\Users\\maniz\\.nuget\\packages\\microsoft.identitymodel.logging\\6.23.1\\microsoft.identitymodel.logging.6.23.1.nupkg.sha512",

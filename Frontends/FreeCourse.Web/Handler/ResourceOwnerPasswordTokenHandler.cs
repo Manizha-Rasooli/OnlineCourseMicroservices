@@ -16,13 +16,16 @@ namespace FreeCourse.Web.Handler
     public class ResourceOwnerPasswordTokenHandler : DelegatingHandler
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly IIdentityService  _identityService;
+        private readonly IIdentityService _identityService;
+        private readonly ILogger<ResourceOwnerPasswordTokenHandler> _logger;
 
-        public ResourceOwnerPasswordTokenHandler(IHttpContextAccessor httpContextAccessor, IIdentityService identityService)
+        public ResourceOwnerPasswordTokenHandler(IHttpContextAccessor httpContextAccessor, IIdentityService identityService, ILogger<ResourceOwnerPasswordTokenHandler> logger)
         {
             _httpContextAccessor = httpContextAccessor;
             _identityService = identityService;
+            _logger = logger;
         }
+
 
         protected async override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
