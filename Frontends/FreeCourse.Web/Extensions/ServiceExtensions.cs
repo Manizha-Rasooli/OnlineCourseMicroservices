@@ -61,6 +61,14 @@ namespace FreeCourse.Web.Extensions
             }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
 
             #endregion
+
+            #region Order Service
+            services.AddHttpClient<IOrderService, OrderService>(opt =>
+            {
+                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Order.Path}");
+            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+            #endregion
         }
     }
 }
